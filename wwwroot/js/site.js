@@ -112,7 +112,7 @@ $(document).ready(function () {
                         html += "<td>" + result[i].makeName + "</td>";
                         html += "<td>" + result[i].modelName + "</td>";
                         html += "<td>" + result[i].mileage + "</td>";
-                        html += "<td>" + result[i].price + "</td>";
+                        html += "<td>$" + result[i].price + "</td>";
                         html += "<td>" + result[i].carColor + "</td>";
                         html += "<td>" + result[i].carStatus + "</td>";
                         html += "</tr>";
