@@ -1,0 +1,32 @@
+﻿@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome American Automobiles</h1>
+</div>
+
+<div id="divFilter">
+    <table style="width: 100%;border:hidden">
+        <tr>
+            <td>
+                <label for="dealers">Choose a Dealer:</label>
+                <select name="dealers" id="dealers-dropdown">
+                </select>
+            </td>
+            <td align="right">
+                <label for="sorting">Choose a sorting:</label>
+                <select name="sorting" id="sorting-dropdown">
+                    <option value=0>Please Select</option>
+                    <option value=1>Price</option>
+                    <option value=2>Model</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div id="CarList"></div>
